@@ -53,7 +53,7 @@ public class CountDownLatchTest1 {
 		}
 		private void doWork() {
 			try {
-				for(int i=0;i< count;i++){
+				for(int i=1;i<=count; i++){
 					System.out.println(Thread.currentThread().getName()+" 第 "+i+" 次干活!!");
 					Thread.sleep(1000);
 				}
@@ -63,5 +63,4 @@ public class CountDownLatchTest1 {
 			
 		}
 	}
-		
 }
